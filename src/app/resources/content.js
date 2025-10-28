@@ -1,15 +1,15 @@
-// Updated portfolio configuration for Muhammad Hashim
+// Updated portfolio configuration for Fahad Rehman
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Muhammad",
-  lastName: "Hashim",
+  firstName: "Fahad",
+  lastName: "Rehman",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "AI & Automation Engineer",
+  role: "Mobile App Developer (Flutter)",
   avatar: "/images/avatar.jpeg",
-  location: "Swabi, KPK, Pakistan",
+  location: "Pakistan",
   languages: ["English", "Urdu"],
 };
 
@@ -18,7 +18,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about AI workflows, agentic systems, LangGraph, and automation pipelines built using platforms like n8n.
+      I occasionally write about Flutter development, mobile app architecture, cross-platform solutions, and modern mobile development practices.
     </>
   ),
 };
@@ -27,22 +27,22 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/EngrHashim160",
+    link: "https://github.com/fahadrehman01",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://linkedin.com/in/engr-hashim",
+    link: "https://www.linkedin.com/in/fahad-rehman-007-mrz/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:engrhashim160@gmail.com",
+    link: "mailto:fahadkhanmrz007@gmail.com",
   },
   {
     name: "WhatsApp",
     icon: "whatsapp",
-    link: "https://wa.me/923197453196",
+    link: "https://wa.me/923030733369",
   },
 ];
 
@@ -50,11 +50,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>AI & Automation Engineer</>,
+  headline: <>Mobile App Developer (Flutter)</>,
   subline: (
     <>
-      I'm Muhammad Hashim, an AI & Automation Engineer specializing in building intelligent agents using <InlineCode>LangGraph</InlineCode>, <InlineCode>Autogen</InlineCode>, and automating CRMs using <InlineCode>n8n</InlineCode>.
-      <br /> I also work with Python, LLMs, and modern data pipelines.
+      I'm Fahad Rehman, a Mobile App Developer specializing in building cross-platform applications using <InlineCode>Flutter</InlineCode>, <InlineCode>Dart</InlineCode>, and creating seamless user experiences.
+      <br /> I also work with Firebase, REST APIs, and modern mobile development practices.
     </>
   ),
 };
@@ -79,7 +79,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I'm a self-driven AI & Automation Engineer with expertise in creating agentic systems, integrating LLMs, and streamlining workflows using tools like LangGraph, Autogen, and n8n. I love building intelligent, scalable systems that automate complex business tasks.
+        I'm a passionate Mobile App Developer with expertise in creating cross-platform applications using Flutter and Dart. I specialize in building intuitive, performant mobile apps that deliver exceptional user experiences across iOS and Android platforms.
       </>
     ),
   },
@@ -88,23 +88,24 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-         
-        company: "AI Intern - DigiSync Technologies (Pvt) Ltd ",
-        timeframe: "Apr 2025 - Jul 2025",
-        role: "AI Intern",
+        company: "Mobile App Developer - Freelance",
+        timeframe: "2023 - Present",
+        role: "Flutter Developer",
         achievements: [
-          <>Completed a 3-month AI internship, working on model training, automation pipelines, and exploratory research under mentorship of senior engineers.</>,
+          <>Developed cross-platform mobile applications using Flutter and Dart for iOS and Android.</>,
+          <>Built responsive UIs with custom widgets and state management using Provider and Bloc.</>,
+          <>Integrated REST APIs, Firebase services, and third-party SDKs for enhanced functionality.</>,
         ],
         images: [],
       },
       {
-        company: "ProspectRoi",
-        timeframe: "Jul 2025 - Present",
-        role: "AI & Automation Engineer",
+        company: "Mobile Development Intern",
+        timeframe: "2022 - 2023",
+        role: "Flutter Intern",
         achievements: [
-          <>Automated email and CRM workflows using Zapier and n8n integrated with LLMs.</>,
-          <>Developed agent pipelines using LangGraph and HuggingFace models.</>,
-          <>Optimized B2B outreach processes using autonomous AI agents.</>,
+          <>Gained hands-on experience in Flutter development and mobile app architecture.</>,
+          <>Worked on UI/UX implementation and performance optimization.</>,
+          <>Collaborated with design teams to implement pixel-perfect mobile interfaces.</>,
         ],
         images: [],
       },
@@ -116,8 +117,8 @@ const about = {
     title: "Education",
     institutions: [
       {
-        name: "University of Engineering & Technology, Mardan",
-        description: <>BS Software Engineering | 2021 - 2025 | CGPA: 3.5</>,
+        name: "Computer Software Engineering",
+        description: <>Bachelor's in Computer Software Engineering | 2021 - 2025 | Focus on Mobile Development</>,
       },
     ],
   },
@@ -126,24 +127,24 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "AI & Automation",
-        description: <>LangGraph, Autogen, OpenAI, HuggingFace, Zapier, n8n, CrewAI</>,
+        title: "Mobile Development",
+        description: <>Flutter, Dart, iOS, Android, Cross-platform Development</>,
       },
       {
-        title: "Languages & Frameworks",
-        description: <>Python, JavaScript, TypeScript, C++, HTML/CSS, Tailwind, React</>,
+        title: "State Management",
+        description: <>Provider, Bloc, Riverpod, GetX, StatefulWidget</>,
       },
       {
         title: "Backend & APIs",
-        description: <>FastAPI, Flask, Node.js, REST APIs, Firebase</>,
+        description: <>REST APIs, GraphQL, Firebase, Node.js, Express</>,
       },
       {
         title: "Databases",
-        description: <>MongoDB, PostgreSQL, MySQL</>,
+        description: <>Firebase Firestore, SQLite, MongoDB, PostgreSQL</>,
       },
       {
         title: "Tools & Platforms",
-        description: <>GitHub, VS Code, Postman, Linux, Docker (basic)</>,
+        description: <>Android Studio, Xcode, VS Code, Git, GitHub, Figma</>,
       },
     ],
   },
@@ -151,21 +152,82 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about AI, automation, and intelligent agents...",
-  description: `Read what ${person.name} has been working on in the AI space`,
+  title: "Writing about Flutter development, mobile apps, and cross-platform solutions...",
+  description: `Read what ${person.name} has been working on in mobile development`,
 };
 
 const work = {
   label: "Work",
   title: "My projects",
-  description: `Projects and AI tools built by ${person.name}`,
+  description: `Mobile apps and Flutter projects built by ${person.name}`,
 };
 
 const gallery = {
   label: "Gallery",
   title: "Photo Gallery",
   description: `Snapshots from ${person.name}'s journey`,
-  images: [],
+  images: [
+    {
+      src: "/images/gallery/9469963_4174812.jpg",
+      alt: "Flutter Development Work",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/9926578_4326821.jpg",
+      alt: "Mobile App Development",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/Ai_chat_bot.jpg",
+      alt: "AI Chat Bot Application",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/Android_App.jpeg",
+      alt: "Android App Development",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/habitapp.png",
+      alt: "Habit Tracking App",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/img-08.jpg",
+      alt: "Flutter Project Showcase",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/img-10.jpg",
+      alt: "Mobile App UI Design",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/iOS_APP.jpeg",
+      alt: "iOS App Development",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/iOS_App.png",
+      alt: "iOS Application",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/WhatsApp Image 2024-08-28 at 21.35.17.jpeg",
+      alt: "Flutter Development Work",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/WhatsApp Image 2024-08-28 at 21.35.18.jpeg",
+      alt: "Mobile App Development",
+      orientation: "horizontal"
+    },
+    {
+      src: "/images/gallery/WhatsApp Image 2024-08-28 at 21.35.19.jpeg",
+      alt: "Flutter Project",
+      orientation: "horizontal"
+    },
+  ],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };

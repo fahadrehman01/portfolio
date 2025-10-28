@@ -1,4 +1,4 @@
-👋 Hi, I’m Engr. Muhammad Hashim
-👀 I’m interested in Data Science & AI Engineering
+👋 Hi, I’m Engr. Fahad Rehman
+👀 I'm interested in App Development
 🌱 Working as AI & Automation Engineer at ProspectRoi
-📫 How to reach me: Whatsap: +92 319-7453196 & Email: engrhashim160@gmail.com
+📫 How to reach me: Whatsap: +92 303-0733368 & Email: fahadkhanmrz007@gmail.com

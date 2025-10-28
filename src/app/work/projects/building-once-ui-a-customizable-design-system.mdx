@@ -1,48 +1,51 @@
 ---
-title: "Calories Advisor"
+title: "Task Management Mobile App"
 publishedAt: "2024-07-25"
-summary: "A Streamlit app that analyzes uploaded food images using AI to estimate calories, provide nutritional breakdowns, and offer health advice."
+summary: "A Flutter-based task management application with offline support, team collaboration features, and intuitive UI for productivity enhancement."
 images:
-  - "/images/projects/project-01/calories-advisor-01.jpeg"
-  - "/images/projects/project-01/calories-advisor-02.jpeg"
-  - "/images/projects/project-01/calories-advisor-03.jpeg"
+  - "/images/projects/project-01/task_management_1.png"
+  - "/images/projects/project-01/Task_management_2.png"
 team:
-  - name: "Muhammad Hashim"
-    role: "AI & Automation Engineer"
+  - name: "Fahad Rehman"
+    role: "Mobile App Developer (Flutter)"
     avatar: "/images/avatar.jpeg"
-    linkedIn: "https://linkedin.com/in/engr-hashim"
-link: "https://github.com/EngrHashim160"
+    linkedIn: "https://www.linkedin.com/in/fahad-rehman-007-mrz/"
+link: "https://github.com/fahadrehman01"
 ---
 
 ## Overview
 
-I developed **Calories Advisor**, an AI-powered Streamlit web application that helps users evaluate their meals through food image uploads. The system detects food items, estimates calories, and generates a comprehensive health report with nutritional breakdowns and wellness tips.
+I developed **Task Manager**, a comprehensive Flutter mobile application designed to enhance productivity through intuitive task management, team collaboration, and offline functionality. The app provides a seamless experience for organizing personal and team tasks with real-time synchronization.
 
 ## Key Features
 
-- *Image Upload*: Accepts food images in JPG, JPEG, and PNG formats
-- *Multi-item Detection*: Identifies multiple food items in a single image
-- *Calorie Estimation*: Calculates estimated calorie content for each item
-- *Meal Health Evaluation*: Provides an overall rating of meal healthiness
-- *Nutrient Breakdown*: Displays percentage-wise distribution of carbohydrates, fats, proteins, sugars, and fibers
-- *Health Tips*: Offers AI-generated dietary advice based on meal composition
+- *Task Management*: Create, edit, and organize tasks with categories and priorities
+- *Offline Support*: Full functionality works without internet connection
+- *Team Collaboration*: Share tasks and projects with team members
+- *Real-time Sync*: Automatic synchronization when connection is restored
+- *Customizable UI*: Dark/light themes with personalized dashboard
+- *Notifications*: Smart reminders and deadline alerts
+- *Data Export*: Export tasks to various formats (PDF, CSV)
 
 ## Technologies Used
 
-- *Frontend*: Streamlit
-- *Backend AI*: Google Gemini Pro 2.5 via `google.generativeai`
-- *Image Handling*: Pillow
-- *Environment Management*: Python virtual environment, `.env` for API key
+- *Framework*: Flutter with Dart
+- *State Management*: Bloc pattern for complex state handling
+- *Local Storage*: SQLite with sqflite for offline data persistence
+- *Backend*: Firebase Firestore for cloud synchronization
+- *Architecture*: Clean Architecture with Repository pattern
+- *UI/UX*: Material Design 3 with custom theming
 
 ## Challenges and Solutions
 
-One challenge was balancing inference accuracy with image variability. I addressed this by designing prompt templates optimized for Gemini's multimodal inputs. The system also includes fallback messaging when confidence scores are low.
+The biggest challenge was implementing robust offline functionality while maintaining data consistency. I solved this by creating a sophisticated sync mechanism using SQLite for local storage and implementing conflict resolution strategies. Another challenge was managing complex state across multiple screens - I addressed this by implementing the Bloc pattern with proper event handling and state management.
 
 ## Outcome
 
 The application:
-- Enabled users to visually assess their food choices
-- Simplified nutritional planning without manual input
-- Delivered actionable health suggestions instantly
+- Provides seamless offline experience with automatic sync
+- Delivers intuitive user interface with smooth animations
+- Successfully handles team collaboration features
+- Maintains data integrity across multiple devices
 
-This project highlights my ability to combine vision and language AI in real-world wellness applications, showcasing strong alignment between user experience and intelligent automation.
+This project demonstrates my expertise in Flutter development, offline-first architecture, and creating scalable mobile applications with complex state management requirements.

@@ -1,47 +1,51 @@
 ---
-title: "AI-Powered Crop Disease Detection"
+title: "Fitness Tracking Mobile App"
 publishedAt: "2024-06-15"
-summary: "An AI-driven crop disease classification system using multiple deep learning models for wheat, rice, maize, and sugarcane."
+summary: "A comprehensive Flutter fitness tracking application with workout logging, progress tracking, and health monitoring features."
 images:
-  - "/images/projects/project-04/crop-ai-01.jpeg"
-  - "/images/projects/project-04/crop-ai-02.jpeg"
-  - "/images/projects/project-04/crop-ai-03.jpeg"
+  - "/images/projects/project-04/fitness_app.jpg"
 team:
-  - name: "Muhammad Hashim"
-    role: "AI & Automation Engineer"
+  - name: "Fahad Rehman"
+    role: "Mobile App Developer (Flutter)"
     avatar: "/images/avatar.jpeg"
-    linkedIn: "https://linkedin.com/in/engr-hashim"
-link: "https://github.com/EngrHashim160"
+    linkedIn: "https://www.linkedin.com/in/fahad-rehman-007-mrz/"
+link: "https://github.com/fahadrehman01"
 ---
 
 ## Overview
 
-I developed a crop disease detection platform that classifies diseases in wheat, rice, maize, and sugarcane using deep learning models. This system helps farmers identify plant diseases early and accurately through a mobile app powered by AI.
+I developed a comprehensive fitness tracking mobile application using Flutter that helps users monitor their health, track workouts, and achieve fitness goals. The app features workout logging, progress tracking, health monitoring, and personalized fitness recommendations.
 
 ## Key Features
 
-- *Multimodel Architecture*: Trained and deployed separate CNN-based models for each crop type to improve accuracy.
-- *Disease Classification*: Detects specific diseases like leaf blight, rust, and bacterial spots across different crop types.
-- *Flutter Integration*: Integrated the models into a mobile app frontend built using Flutter and Dart.
-- *TensorFlow Models*: Each model was saved as an `.h5` file and loaded dynamically based on selected crop type.
-- *Offline Functionality*: Ensured the models could run on-device without needing internet access for predictions.
+- *Workout Logging*: Track various exercises with sets, reps, and weights
+- *Progress Tracking*: Visual charts and graphs showing fitness progress over time
+- *Health Monitoring*: Integration with health sensors for heart rate and step counting
+- *Custom Workouts*: Create and save personalized workout routines
+- *Goal Setting*: Set and track fitness goals with milestone celebrations
+- *Social Features*: Share achievements and compete with friends
+- *Offline Support*: Full functionality works without internet connection
 
 ## Technologies Used
 
-- *Deep Learning*: TensorFlow, Keras
-- *Model Format*: .h5
-- *Frontend*: Flutter (Dart)
-- *Deployment*: Android APK with embedded models
+- *Framework*: Flutter with Dart
+- *State Management*: Riverpod for reactive state management
+- *Local Database*: SQLite with sqflite for data persistence
+- *Health Integration*: Health Connect (Android) and HealthKit (iOS)
+- *Charts*: FL Chart for data visualization
+- *Animations*: Custom animations for workout tracking
+- *Architecture*: Clean Architecture with Repository pattern
 
 ## Challenges and Solutions
 
-A major challenge was handling multiple crop types with differing data distributions. I tackled this by creating modular pipelines and training crop-specific models to boost classification accuracy. Another challenge was optimizing models to run efficiently on mobile devices, which I addressed through quantization and pruning.
+The main challenge was integrating with different health platforms across iOS and Android while maintaining a consistent user experience. I solved this by creating platform-specific implementations and using Flutter's platform channels. Another challenge was handling large amounts of fitness data efficiently - I addressed this by implementing proper database indexing and pagination.
 
 ## Outcome
 
-The platform:
-- Achieved over 90% test accuracy on all models
-- Enabled farmers to detect diseases offline
-- Reduced dependency on expert visits for basic diagnoses
+The application:
+- Provides comprehensive fitness tracking with intuitive UI
+- Successfully integrates with device health sensors
+- Delivers smooth performance with large datasets
+- Offers personalized fitness insights and recommendations
 
-This project showcases my ability to combine AI, mobile development, and agricultural insights into a scalable and user-friendly solution.
+This project demonstrates my expertise in Flutter development, health app integration, and creating data-driven mobile applications with complex state management and visualization requirements.
