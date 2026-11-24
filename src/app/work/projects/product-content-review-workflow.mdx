@@ -1,0 +1,38 @@
+---
+title: "Full stack product review workflow"
+publishedAt: "2026-11-24"
+summary: "An anonymous case study in selective AI generation, preserving existing content, and making product changes easier to review."
+images:
+  - "/images/case-studies/product-review.png"
+team: []
+link: ""
+---
+
+## The business problem
+
+A product team needed a practical way to review proposed e-commerce content changes. Rewriting every field would create unnecessary work and AI usage, while incomplete source information could lead to weak suggestions.
+
+## My contribution
+
+I worked on the full stack review flow: deciding which fields needed an update, checking the available product evidence, preserving useful existing content, and making proposed changes understandable on desktop and mobile.
+
+The implementation connected TypeScript and Node.js application logic with PostgreSQL-backed workflows and Cloudflare deployment. I also added regression cases around the decisions that were most likely to damage an existing draft or produce an unnecessary rewrite.
+
+## A concrete validation result
+
+In an eight-product trial:
+
+- Two product titles were selected for generation using verified product details.
+- Six existing titles and all eight existing descriptions were preserved.
+- Eight meta descriptions were held for review because their current text could not be verified.
+- The trial used two model calls rather than generating content for every field.
+
+## Delivery and verification
+
+The release passed 332 application regression suites, plus 55 database checks against both fresh and upgraded databases. The title suggestions and before-and-after preview were also checked on desktop and at a 390px mobile width before the production handoff.
+
+## Why the decisions mattered
+
+Selective generation reduced unnecessary processing in the trial. Preserving existing content reduced review work, and holding uncertain fields for review kept the workflow honest about its inputs. The engineering work supported a clearer product experience and more controlled operating costs.
+
+Client and product identities are kept private in this case study.

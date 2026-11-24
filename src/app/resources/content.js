@@ -7,18 +7,19 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Mobile App Developer (Flutter)",
+  role: "Flutter & Full Stack Developer",
   avatar: "/images/avatar.jpeg",
   location: "Pakistan",
   languages: ["English", "Urdu"],
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about Flutter development, mobile app architecture, cross-platform solutions, and modern mobile development practices.
+      I occasionally write about Flutter development, mobile app architecture,
+      cross-platform solutions, and modern mobile development practices.
     </>
   ),
 };
@@ -49,12 +50,15 @@ const social = [
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Mobile App Developer (Flutter)</>,
+  description:
+    "Flutter and full stack developer working remotely with an Australian product team. Mobile apps, web products, and practical engineering that supports business goals.",
+  headline: <>Flutter & Full Stack Developer</>,
   subline: (
     <>
-      I'm Fahad Rehman, a Mobile App Developer specializing in building cross-platform applications using <InlineCode>Flutter</InlineCode>, <InlineCode>Dart</InlineCode>, and creating seamless user experiences.
-      <br /> I also work with Firebase, REST APIs, and modern mobile development practices.
+      I build mobile and web products around real business needs.
+      <br /> I'm Fahad Rehman, working remotely with{" "}
+      <InlineCode>Onelife AI</InlineCode> in Australia. My work connects product
+      scope, user experience, reliable engineering, and operating costs.
     </>
   ),
 };
@@ -71,15 +75,23 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com/engrhashim160",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        I'm a passionate Mobile App Developer with expertise in creating cross-platform applications using Flutter and Dart. I specialize in building intuitive, performant mobile apps that deliver exceptional user experiences across iOS and Android platforms.
+        I'm a Flutter and full stack developer based in Pakistan, working
+        remotely with Onelife AI, an Australian company. I help turn business
+        requirements into focused mobile and web products, from scoping and
+        implementation through testing, deployment, and ongoing improvement.
+        <br />
+        <br />I consider who a feature serves, which problem it solves, and what
+        it costs to build and maintain. My approach combines hands-on
+        engineering with client communication, product judgment, and experience
+        leading developers.
       </>
     ),
   },
@@ -88,28 +100,77 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Mobile App Developer - Freelance",
-        timeframe: "2023 - Present",
-        role: "Flutter Developer",
+        company: "Onelife AI · Australia · Remote",
+        timeframe: "Jul 2026 - Present",
+        role: "Full Stack Developer",
         achievements: [
-          <>Developed cross-platform mobile applications using Flutter and Dart for iOS and Android.</>,
-          <>Built responsive UIs with custom widgets and state management using Provider and Bloc.</>,
-          <>Integrated REST APIs, Firebase services, and third-party SDKs for enhanced functionality.</>,
+          <>
+            Develop and improve software products using TypeScript, Node.js,
+            Supabase/PostgreSQL, and Cloudflare.
+          </>,
+          <>
+            Translate business requirements into scoped features, review
+            workflows, API integrations, and database-backed functionality.
+          </>,
+          <>
+            Verify changes through automated checks, desktop and mobile review,
+            and production release validation.
+          </>,
         ],
         images: [],
       },
       {
-        company: "Mobile Development Intern",
-        timeframe: "2022 - 2023",
-        role: "Flutter Intern",
+        company: "Freelance",
+        timeframe: "May 2022 - Present",
+        role: "Flutter & Full Stack Developer",
         achievements: [
-          <>Gained hands-on experience in Flutter development and mobile app architecture.</>,
-          <>Worked on UI/UX implementation and performance optimization.</>,
-          <>Collaborated with design teams to implement pixel-perfect mobile interfaces.</>,
+          <>
+            Build iOS and Android applications with Flutter, Dart, Firebase, and
+            REST APIs.
+          </>,
+          <>
+            Implement interfaces, authentication, chat, booking flows, payments,
+            and subscriptions.
+          </>,
+          <>
+            Improve existing applications and support App Store and Google Play
+            releases.
+          </>,
         ],
         images: [],
       },
-     
+      {
+        company: "Cognisons",
+        timeframe: "Oct 2025 - Sep 2026",
+        role: "Full Stack Developer",
+        achievements: [
+          <>
+            Worked across web interfaces, backend services, APIs, databases, and
+            deployment.
+          </>,
+          <>
+            Used React, Next.js, TypeScript, Node.js, Firebase, Supabase, and
+            PostgreSQL.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Logic Loomer (Pvt) Ltd.",
+        timeframe: "Sep 2024 - Sep 2025",
+        role: "Flutter Developer & CTO",
+        achievements: [
+          <>
+            Led Flutter development, sprint planning, code reviews, and release
+            coordination while remaining hands-on.
+          </>,
+          <>
+            Worked directly with clients on requirements and technical scope for
+            more than five projects.
+          </>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {
@@ -117,8 +178,13 @@ const about = {
     title: "Education",
     institutions: [
       {
-        name: "Computer Software Engineering",
-        description: <>Bachelor's in Computer Software Engineering | 2021 - 2025 | Focus on Mobile Development</>,
+        name: "UET Mardan",
+        description: (
+          <>
+            Bachelor of Engineering in Computer Software Engineering · 2021 -
+            2025
+          </>
+        ),
       },
     ],
   },
@@ -128,23 +194,51 @@ const about = {
     skills: [
       {
         title: "Mobile Development",
-        description: <>Flutter, Dart, iOS, Android, Cross-platform Development</>,
+        description: (
+          <>Flutter, Dart, iOS, Android, Cross-platform Development</>
+        ),
       },
       {
-        title: "State Management",
-        description: <>Provider, Bloc, Riverpod, GetX, StatefulWidget</>,
+        title: "Web & Full Stack",
+        description: (
+          <>React, Next.js, TypeScript, JavaScript, Node.js, REST APIs</>
+        ),
       },
       {
         title: "Backend & APIs",
-        description: <>REST APIs, GraphQL, Firebase, Node.js, Express</>,
+        description: (
+          <>
+            Firebase Authentication, Firestore, Cloud Functions, Supabase, API
+            integration
+          </>
+        ),
       },
       {
         title: "Databases",
-        description: <>Firebase Firestore, SQLite, MongoDB, PostgreSQL</>,
+        description: (
+          <>
+            PostgreSQL, Firebase Firestore, SQL, data access and authentication
+            workflows
+          </>
+        ),
       },
       {
         title: "Tools & Platforms",
-        description: <>Android Studio, Xcode, VS Code, Git, GitHub, Figma</>,
+        description: (
+          <>
+            Git, Cloudflare, automated regression checks, Figma, Xcode, App
+            Store and Google Play releases
+          </>
+        ),
+      },
+      {
+        title: "Product & Delivery",
+        description: (
+          <>
+            Requirements, MVP scoping, client communication, code reviews,
+            usability, and ongoing operating costs
+          </>
+        ),
       },
     ],
   },
@@ -152,14 +246,15 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about Flutter development, mobile apps, and cross-platform solutions...",
+  title:
+    "Writing about Flutter development, mobile apps, and cross-platform solutions...",
   description: `Read what ${person.name} has been working on in mobile development`,
 };
 
 const work = {
   label: "Work",
   title: "My projects",
-  description: `Mobile apps and Flutter projects built by ${person.name}`,
+  description: `Mobile and full stack case studies by ${person.name}, with engineering decisions and delivered outcomes.`,
 };
 
 const gallery = {
@@ -170,62 +265,62 @@ const gallery = {
     {
       src: "/images/gallery/9469963_4174812.jpg",
       alt: "Flutter Development Work",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/9926578_4326821.jpg",
       alt: "Mobile App Development",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/Ai_chat_bot.jpg",
       alt: "AI Chat Bot Application",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/Android_App.jpeg",
       alt: "Android App Development",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/habitapp.png",
       alt: "Habit Tracking App",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-08.jpg",
       alt: "Flutter Project Showcase",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-10.jpg",
       alt: "Mobile App UI Design",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/iOS_APP.jpeg",
       alt: "iOS App Development",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/iOS_App.png",
       alt: "iOS Application",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/WhatsApp Image 2024-08-28 at 21.35.17.jpeg",
       alt: "Flutter Development Work",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/WhatsApp Image 2024-08-28 at 21.35.18.jpeg",
       alt: "Mobile App Development",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/WhatsApp Image 2024-08-28 at 21.35.19.jpeg",
       alt: "Flutter Project",
-      orientation: "horizontal"
+      orientation: "horizontal",
     },
   ],
 };

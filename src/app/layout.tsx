@@ -19,8 +19,8 @@ export async function generateMetadata() {
     description: home.description,
     openGraph: {
       title: `${person.firstName}'s Portfolio`,
-      description: "Portfolio website showcasing my work.",
-      url: baseURL,
+      description: home.description,
+      url: `https://${baseURL}`,
       siteName: `${person.firstName}'s Portfolio`,
       locale: "en_US",
       type: "website",
@@ -91,7 +91,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <ToastProvider>
-        <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
+        <Column
+          style={{ minHeight: "100vh" }}
+          as="body"
+          fillWidth
+          margin="0"
+          padding="0"
+        >
           <Background
             mask={{
               cursor: effects.mask.cursor,
@@ -109,17 +115,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
               colorStart: effects.gradient.colorStart,
               colorEnd: effects.gradient.colorEnd,
               opacity: effects.gradient.opacity as
-                | 0
-                | 10
-                | 20
-                | 30
-                | 40
-                | 50
-                | 60
-                | 70
-                | 80
-                | 90
-                | 100,
+                0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100,
             }}
             dots={{
               display: effects.dots.display,

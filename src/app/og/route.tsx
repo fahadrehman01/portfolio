@@ -1,107 +1,44 @@
 import { ImageResponse } from "next/og";
-import { baseURL } from "@/app/resources";
 import { person } from "@/app/resources/content";
 
 export const runtime = "edge";
 
 export async function GET(request: Request) {
-  let url = new URL(request.url);
-  let title = url.searchParams.get("title") || "Portfolio";
-  const font = fetch(new URL("../../../public/fonts/Inter.ttf", import.meta.url)).then((res) =>
-    res.arrayBuffer(),
-  );
-  const fontData = await font;
-
+  const title = (
+    new URL(request.url).searchParams.get("title") || person.role
+  ).slice(0, 140);
   return new ImageResponse(
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
         width: "100%",
         height: "100%",
-        padding: "8rem",
-        background: "#151515",
+        padding: "64px",
+        background: "#091624",
+        color: "#f1f5f9",
+        fontFamily: "sans-serif",
+        borderTop: "12px solid #5eead4",
       }}
     >
+      <div style={{ display: "flex", fontSize: 28, color: "#7dd3fc" }}>
+        {person.name}
+      </div>
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          gap: "4rem",
-          fontFamily: "Inter",
-          fontStyle: "normal",
-          color: "white",
+          fontSize: 60,
+          lineHeight: 1.15,
+          letterSpacing: "-2px",
         }}
       >
-        <span
-          style={{
-            fontSize: "8rem",
-            lineHeight: "8rem",
-            letterSpacing: "-0.05em",
-            whiteSpace: "pre-wrap",
-            textWrap: "balance",
-          }}
-        >
-          {title}
-        </span>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "5rem",
-          }}
-        >
-          <img
-            src={"https://" + baseURL + person.avatar}
-            style={{
-              width: "12rem",
-              height: "12rem",
-              objectFit: "cover",
-              borderRadius: "100%",
-            }}
-          />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.75rem",
-            }}
-          >
-            <span
-              style={{
-                fontSize: "4.5rem",
-                lineHeight: "4.5rem",
-                whiteSpace: "pre-wrap",
-                textWrap: "balance",
-              }}
-            >
-              {person.name}
-            </span>
-            <span
-              style={{
-                fontSize: "2.5rem",
-                lineHeight: "2.5rem",
-                whiteSpace: "pre-wrap",
-                textWrap: "balance",
-                opacity: "0.6",
-              }}
-            >
-              {person.role}
-            </span>
-          </div>
-        </div>
+        {title}
+      </div>
+      <div style={{ display: "flex", fontSize: 24, color: "#cbd5e1" }}>
+        Mobile apps · Web products · Business value
       </div>
     </div>,
-    {
-      width: 1920,
-      height: 1080,
-      fonts: [
-        {
-          name: "Inter",
-          data: fontData,
-          style: "normal",
-        },
-      ],
-    },
+    { width: 1200, height: 630 },
   );
 }

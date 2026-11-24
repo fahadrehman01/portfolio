@@ -1,6 +1,15 @@
 import React from "react";
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column } from "@/once-ui/components";
+import {
+  Heading,
+  Flex,
+  Text,
+  Button,
+  Avatar,
+  RevealFx,
+  Arrow,
+  Column,
+} from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 import { AnimatedSvg } from "@/components";
 
@@ -51,13 +60,13 @@ export default function Home() {
             name: home.title,
             description: home.description,
             url: `https://${baseURL}`,
-            image: `${baseURL}/og?title=${encodeURIComponent(home.title)}`,
+            image: `https://${baseURL}/og?title=${encodeURIComponent(home.title)}`,
             publisher: {
               "@type": "Person",
               name: person.name,
               image: {
                 "@type": "ImageObject",
-                url: `${baseURL}${person.avatar}`,
+                url: `https://${baseURL}${person.avatar}`,
               },
             },
           }),
@@ -65,13 +74,28 @@ export default function Home() {
       />
       <Flex fillWidth paddingY="l" gap="m" mobileDirection="column">
         <Column maxWidth="s" flex={1}>
-          <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
+          <RevealFx
+            translateY="4"
+            fillWidth
+            horizontal="start"
+            paddingBottom="m"
+          >
             <Heading wrap="balance" variant="display-strong-l">
               {home.headline}
             </Heading>
           </RevealFx>
-          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+          <RevealFx
+            translateY="8"
+            delay={0.2}
+            fillWidth
+            horizontal="start"
+            paddingBottom="m"
+          >
+            <Text
+              wrap="balance"
+              onBackground="neutral-weak"
+              variant="heading-default-xl"
+            >
               {home.subline}
             </Text>
           </RevealFx>
@@ -82,7 +106,6 @@ export default function Home() {
               href="/about"
               variant="secondary"
               size="m"
-              arrowIcon
             >
               <Flex gap="8" vertical="center">
                 {about.avatar.display && (
@@ -98,8 +121,11 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Flex>
+      <Heading as="h2" variant="display-strong-xs">
+        Selected work and outcomes
+      </Heading>
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
+        <Projects range={[1, 2]} />
       </RevealFx>
       {routes["/blog"] && (
         <Flex fillWidth gap="24" mobileDirection="column">
@@ -113,7 +139,7 @@ export default function Home() {
           </Flex>
         </Flex>
       )}
-      <Projects range={[2]} />
+      <Projects range={[3]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );
