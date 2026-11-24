@@ -10,6 +10,7 @@ Personal portfolio for mobile applications, full stack product work, and anonymo
 ## Validation
 
     npx tsc --noEmit
+    npm test
     npm run build
 
 The existing template disables type and ESLint checks inside the build, so run TypeScript separately. Content lives in src/app/resources/content.js; case studies live in src/app/work/projects.
